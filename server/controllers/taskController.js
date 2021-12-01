@@ -75,13 +75,13 @@ const TaskAPIController = {
                 response.status( 404 ).end();
             }
             else{
-                if(newtitle){
+                if(updatedTitle){
                     taskToUpdated.title = updatedTitle;
                 }
-                if(newdescription){
+                if(updatedDescription){
                     taskToUpdated.description = updatedDescription;
                 }
-                if(newcompleted){
+                if(updatedCompleted){
                     taskToUpdated.completed = updatedCompleted;
                 }
                 taskToUpdated.updated_at = updated_at
